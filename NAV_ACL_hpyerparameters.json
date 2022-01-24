@@ -1,0 +1,146 @@
+{
+    "default_task_unity" : {
+        "robot_pose" : {
+            "translation" :[-2.8,0.0,0.01],
+            "rotation_yaw" : [0]
+        },
+        "dolly_pose" : {
+            "translation" : [2.5,0.15,0.01],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_pose": {
+            "translation" :  [0.5,1.50,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_1_pose": {
+            "translation" :  [0.5,-1.7,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_2_pose": {
+            "translation" :  [2,-1.7,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_3_pose": {
+            "translation" :  [2.5,2,0.1],
+            "rotation_yaw" : [0]
+        }
+    },
+    "default_test_unity" : {
+        "robot_pose" : {
+            "translation" :[0.0,2.5,0.01],
+            "rotation_yaw" : [0]
+        },
+        "dolly_pose" : {
+            "translation" : [2.0,0,0.01],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_pose": {
+            "translation" :  [10,0.5,0.01],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_1_pose": {
+            "translation" :  [10,4.1,0.01],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_2_pose": {
+            "translation" :  [10,-1.7,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_3_pose": {
+            "translation" :  [10,2,0.1],
+            "rotation_yaw" : [0]
+        }
+    },
+    "crazy_test_unity" : {
+        "robot_pose" : {
+            "translation" :[2.0,109.0,0.01],
+            "rotation_yaw" : [180]
+        },
+        "dolly_pose" : {
+            "translation" : [-7,111.0,0.01],
+            "rotation_yaw" : [10]
+        },
+        "obstacle_pose": {
+            "translation" :  [4.0,111.0,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_1_pose": {
+            "translation" :  [8.0,111.0,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_2_pose": {
+            "translation" :  [9.0,111.0,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_3_pose": {
+            "translation" :  [2.0,111.5,0.1],
+            "rotation_yaw" : [0]
+        }
+    },
+    "default_task_omniverse" : {
+        "robot_pose" : {
+            "translation" :[1.1,0.0,0.01],
+            "rotation_yaw" : [0]
+        },
+        "dolly_pose" : {
+            "translation" : [2.5,0.15,0.01],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_pose": {
+            "translation" :  [0.5,1.50,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_1_pose": {
+            "translation" :  [0.5,-1.7,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_2_pose": {
+            "translation" :  [2,-1.7,0.1],
+            "rotation_yaw" : [0]
+        },
+        "obstacle_3_pose": {
+            "translation" :  [2.5,2,0.1],
+            "rotation_yaw" : [0]
+        }
+    },
+
+    "randomization_params" : {
+    "robot_randomization":    {"translation_rnd_xyz":[1,1,0],"rotation_rnd":[180]},
+    "dolly_randomization":    {"translation_rnd_xyz":[0.7,0.4,0],"rotation_rnd":[30]},
+    "num_obstacles"         : 4,
+    "dolly_pos_spline_angle": 30,
+    "obstacle_pos_spline_mean" : 0.5,
+    "min_dist_dolly_robot":   1.5,
+    "max_dist_dolly_robot":   5.0,
+    "min_dist_dolly_obs":     2.0,
+    "max_dist_dolly_obs":     5.1,
+    "min_dist_robot_obs":     2.0,
+    "max_dist_robot_obs":     4.1,
+    "del_obstacle_translation":  [1000,1000,1000],
+    "obstacle_randomization": {"translation_rnd_xyz":[0.8,0.8,0],"rotation_rnd":[12]}
+    },
+    "runtimetasks_from_database": true ,
+    "update_nav_nets_every_N_episodes": 10, 
+    "nav_acl_max_AF_task_samples" : 100,
+    "nav_acl_AF_boundaries_task_samples" : 100,
+    "nav_acl_hidden_dim": 16,
+    "nav_acl_batch_mode": true,
+    "nav_acl_batch_size": 16,
+    "nav_acl_lr": 0.004,
+    "only_random_tasks": false,
+    "normalize_tasks": true,
+    "q_ricculum_learning" : true,
+    "task_generation_method" : "AF",
+    "create_new_AF_database" : false,
+    "new_AF_database_size"  : 6000,
+    "use_AF_database"  : false,
+    "AF_database_path" : "/home/developer/Training_results/Qricculum_Learning/big_and_small/hoffentlich/",
+    "GOID_limits": {"lower_limit" : 0.4, 
+                    "upper_limit" : 0.6},
+
+    "adaptive_filtering_params" : {"nav_beta": 1.0,
+                        "nav_gamma_low": 1.0,
+                        "nav_gamma_hi": 0.1,
+                        "p_random_max" : 0.15,
+                        "nav_P_omega": 0.97}
+}
