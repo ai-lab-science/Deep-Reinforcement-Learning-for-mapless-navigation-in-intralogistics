@@ -1,12 +1,13 @@
 # Deep-Reinforcement-Learning-for-mapless-navigation-in-intralogistics
 This repository is for the paper "Using Deep Reinforcement Learning with Automatic Curriculum Learning for Mapless Navigation in Intralogistics".
 
-The codes includes (i) Soft Actor Critic Algorithm (ii) Our algorithm of NavACL_Q.
+The codes includes:
+* Soft Actor Critic Algorithm  
+* Our algorithm of NavACL_Q
+* Hyper-parameter Settings
 
-## Some of our Results
-Here we demonstraed some videos of our trained agent on successfully reaching goal state, i.e., the blue dolly.
-
-
+## Illustration of our results
+Here we demonstrate some videos of our trained agent on successfully reaching goal state, i.e., the blue dolly.
 
 <!-- ![Media3](https://user-images.githubusercontent.com/27278454/151372213-829e4833-9a3b-4ba2-b046-1a3f7b226bf9.mp4)  -->
 [![watch the video](https://user-images.githubusercontent.com/27278454/151380252-510bd73c-03b7-4790-be10-562155494a9c.jpg)](https://user-images.githubusercontent.com/27278454/151382348-c3d8a984-01eb-4e69-9093-114d611eddb5.mp4)
