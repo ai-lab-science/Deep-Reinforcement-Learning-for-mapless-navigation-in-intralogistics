@@ -2,7 +2,7 @@
 This repository is for the paper "Using Deep Reinforcement Learning with Automatic Curriculum Learning for Mapless Navigation in Intralogistics".
 
 The codes includes:
-* Soft Actor Critic Algorithm  
+* Soft Actor Critic Algorithm, adapted from [1]
 * Our algorithm of NavACL_Q
 * Hyper-parameter Settings
 
@@ -23,3 +23,8 @@ Here we demonstrate some videos of our trained agent on successfully reaching go
 
 Even with a moving target, the trained agent is able to react responsively to navigate to the goal.
 ![Media3](https://user-images.githubusercontent.com/27278454/151374369-5899a3bd-338f-4450-9f7d-f4bb5071c400.gif)
+
+
+
+## Illustration of our results
+[1] https://github.com/quantumiracle/Popular-RL-Algorithms
